@@ -1,7 +1,7 @@
 
 # gyrec-stego-demo
 
-Steganografické hands-on pro workshop na Gyrecu
+Steganografické hands-on pro workshop na Gyrecu 2024
 
 ## Chci si to vyřešit sám
 
