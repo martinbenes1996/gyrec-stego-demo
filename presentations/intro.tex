@@ -19,9 +19,12 @@
 \usetikzlibrary{arrows.meta,arrows}
 \usetikzlibrary{patterns.meta}
 
+\usetheme{metropolis}
+\setbeamercolor{background canvas}{bg=white}
+
 % ------------------------------------------------------------------------
 \title{Workshop: Neviditelný digitální inkoust}
-%\titlegraphic{../../classes/Vertiefungsseminar/fig/VSSEC_title}
+%\titlegraphic{\includegraphics[width=\textwidth]{../img/uibk_header4.png}}
 \subtitle{Úvodní prezentace}
 \author{Martin Bene{\v s}}
 
@@ -32,7 +35,9 @@
 \maketitle
 \begin{tikzpicture}[overlay,remember picture]
 \draw (current page.south west) node [above right, inner sep=.5cm] (uncover) {\includegraphics[height=1.2cm]{../img/uncover.png}};
-\draw (current page.south east) node [above left, inner sep=.5cm] (uncover) {\includegraphics[height=1.2cm]{../img/uibk.png}};
+\draw (current page.south east) node [above left, inner sep=.5cm] (uibk) {\includegraphics[height=1.2cm]{../img/uibk.png}};
+%\draw (current page.north) node [] {\includegraphics[height=\textwidth]{../img/uibk.png}}
+\draw (current page.north)++(0,-1.5) node [] {\includegraphics[width=\paperwidth]{../img/uibk_header4.png}};
 \end{tikzpicture}
 \end{frame}
 
@@ -130,8 +135,8 @@ MSc. ze statistiky, Linköping Universitet (Švédsko), 2021
 = ukrývání tajných zpráv do nenápadných, všedních objektů
 
 \begin{itemize}
-\item Kryptografie ukrývá smysl zprávy.
-\item Steganografie ukrývá existenci zprávy.
+\item<2-> Kryptografie ukrývá {\it smysl} zprávy.
+\item<3-> Steganografie ukrývá {\it existenci} zprávy.
 \end{itemize}
 \end{frame}
 
@@ -257,14 +262,14 @@ MSc. ze statistiky, Linköping Universitet (Švédsko), 2021
 \frametitle{Využití steganografie a steganalýzy}
 
 \begin{itemize}
-\item organizovaný zločin vs. kriminalisté
-\item<2-> zpravodajské služby
-\item<3-> disidenti vs. totalitní režim
-\item<4-> stego-malware vs. antivirové programy
+\item<2-> organizovaný zločin vs. kriminalisté
+\item<3-> zpravodajské služby
+\item<4-> disidenti vs. totalitní režim
+\item<5-> stego-malware vs. antivirové programy
 \end{itemize}
 \bigskip
 
-\onslide<5>{
+\onslide<6>{
 = komunikace v nepřátelsky naladěném prostředí
 }
 \end{frame}
@@ -281,7 +286,7 @@ MSc. ze statistiky, Linköping Universitet (Švédsko), 2021
 \item Reprezentace v počítači
 \item Zpracování obrázků
 \end{itemize}
-\item LSBr steganografie
+\item Steganografie nahrazováním LSB
 \begin{itemize}
 \item Sekvenční průchod
 \item Permutovaný průchod
@@ -368,5 +373,13 @@ EU Horizon 2020 pod grantovou smlouvou č. 101021687.};
 }
 \end{frame}
 
+
+\begin{frame}[plain]
+%\frametitle{Oznámení o financování}
+\centering
+
+A teď už jdeme na to!
+
+\end{frame}
 
 \end{document}
